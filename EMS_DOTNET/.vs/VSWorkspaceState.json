@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EMS_PRJ",
+    "\\EMS_PRJ\\bin\\Debug",
+    "\\EMS_PRJ\\bin\\Release",
+    "\\EMS_PRJ\\Controllers",
+    "\\EMS_PRJ\\Data",
+    "\\EMS_PRJ\\Models",
+    "\\EMS_PRJ\\obj",
+    "\\EMS_PRJ\\Views",
+    "\\EMS_PRJ\\Views\\Employees"
+  ],
+  "SelectedNode": "\\Employee_Management_System_Solution.sln",
+  "PreviewInSolutionExplorer": false
+}

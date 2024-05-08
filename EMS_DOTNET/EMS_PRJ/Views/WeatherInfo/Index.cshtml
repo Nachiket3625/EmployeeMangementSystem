@@ -1,0 +1,37 @@
+﻿@model EmployeeManagementSystem.Models.WeatherForeCast
+
+@{
+    ViewData["Title"] = "WeatherInfoDetails";
+}
+
+
+<h1>Weather Forecast</h1>
+
+<p>Latitude: @Model.Latitude</p>
+<p>Longitude: @Model.Longitude</p>
+<p>Generation Time (ms): @Model.GenerationTimeMilliseconds</p>
+<p>UTC Offset (seconds): @Model.UtcOffsetSeconds</p>
+<p>Timezone: @Model.Timezone (@Model.TimezoneAbbreviation)</p>
+<p>Elevation: @Model.Elevation</p>
+
+<h2>Hourly Data</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Temperature (&deg;C)</th>
+            <th>Relative Humidity (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Hourly.Time.Count; i++)
+        {
+            <tr>
+                <td>@Model.Hourly.Time[i]</td>
+                <td>@Model.Hourly.Temperature_2m[i]</td>
+                <td>@Model.Hourly.Relative_Humidity_2m[i]</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

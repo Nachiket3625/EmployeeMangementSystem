@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\V2_EMS_MVC_RepoPattern_InMemory.props" />
+</Project>
